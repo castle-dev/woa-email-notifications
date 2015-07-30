@@ -26,7 +26,8 @@ ref.authWithCustomToken(process.env.FIREBASE_SECRET, function (err) {
           }
           else {
             var post = snapshot.val();
-            var body = 'Name: ' + post.name.big() + '\n\n\n' + 'Accomplishment: ' + post.accomplishment;
+            var body = 'Good job ' + post.name + '! Your accomplishment: ' + post.accomplishment + '!';
+            body = body.big()
             console.log(new Date().toString(), 'new post: ', body);
             EmailService
             .send('New Wall of Accomplishments Post!', 'woa@entercastle.com', body)
