@@ -1,0 +1,25 @@
+{
+  "name": "woa-email-notifications",
+  "version": "0.0.0",
+  "description": "A node server that listens for and responds to changes in the Wall of Accomplishments",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/castle-dev/woa-email-notifications.git"
+  },
+  "keywords": [
+    "node",
+    "firebase"
+  ],
+  "author": "Castle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/castle-dev/woa-email-notifications"
+  },
+  "homepage": "https://github.com/castle-dev/woa-email-notifications",
+  "dependencies": {
+    "firebase": "^2.0.5",
+    "powerdrill": "^0.2.12",
+    "q": "^1.1.2"
+  }
+}
