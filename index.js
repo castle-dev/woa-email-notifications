@@ -26,7 +26,7 @@ ref.authWithCustomToken(process.env.FIREBASE_SECRET, function (err) {
           }
           else {
             var post = snapshot.val();
-            var body = 'Good job ' + post.name + '! Your accomplishment: ' + post.accomplishment + '!';
+            var body = 'Good job ' + post.name + '! Your accomplishment: ' + post.accomplishment + '! This accomplishment was made ' + post.who;
             body = body.big()
             console.log(new Date().toString(), 'new post: ', body);
             EmailService
